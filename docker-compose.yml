@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+
+  nginx_static:
+    image: flashspys/nginx-static
+    container_name: nginx_static
+    ports:
+      - 8027:80
+    volumes:
+      - /home/abraxas/www:/static
+
+    restart: always
